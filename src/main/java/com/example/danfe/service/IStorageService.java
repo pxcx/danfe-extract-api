@@ -7,17 +7,12 @@ import java.nio.file.Path;
 import java.util.List;
 
 public interface IStorageService {
-
     void init();
-
     String store(MultipartFile file);
-
+    void copy(Resource file, String destinationDir);
     List<Path> loadAll();
-
     Path load(String filename);
-
     Resource loadAsResource(String filename);
-
     void deleteAll();
 
 }

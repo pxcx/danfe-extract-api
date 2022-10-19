@@ -7,14 +7,16 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 @Service
-public class DanfePackageUploadService {
+public class PackageUploadService {
     private MultipartFile danfePackage;
     private String packageID;
     private IStorageService storageService;
+    private ZipFileService zipfileService;
 
     @Autowired
-    public DanfePackageUploadService(IStorageService storageService) {
+    public PackageUploadService(IStorageService storageService, ZipFileService zipfileService) {
         this.storageService = storageService;
+        this.zipfileService = zipfileService;
     }
 
     public void setDanfePackage(MultipartFile danfePackage) {
@@ -29,7 +31,10 @@ public class DanfePackageUploadService {
 
     public void execute() {
         validate();
+        storageService.init();
         packageID = storageService.store(danfePackage);
+        zipfileService.setZipFilename(packageID, danfePackage.getOriginalFilename());
+        zipfileService.execute();
     }
 
     public DanfePackageUploadOutput getOutput() {

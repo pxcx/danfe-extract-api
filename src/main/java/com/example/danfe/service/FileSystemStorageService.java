@@ -29,10 +29,12 @@ public class FileSystemStorageService implements IStorageService{
 
     @Override
     public void init() {
-        try {
-            Files.createDirectory(rootLocation);
-        } catch (IOException e) {
-            throw new StorageException("Error to initialize storage", e);
+        if (!Files.exists(rootLocation)) {
+            try {
+                Files.createDirectory(rootLocation);
+            } catch (IOException e) {
+                throw new StorageException("Error to initialize storage", e);
+            }
         }
     }
 
@@ -58,6 +60,16 @@ public class FileSystemStorageService implements IStorageService{
             return packageID;
         } catch (IOException e) {
             throw new StorageException("Failed to store file " + file.getOriginalFilename(), e);
+        }
+    }
+
+    @Override
+    public void copy(Resource file, String destinationDir) {
+        try {
+            String destinationFilename = destinationDir + "/" + file.getFilename();
+            Files.copy(file.getInputStream(), this.rootLocation.resolve(destinationFilename));
+        } catch (IOException e) {
+            throw new StorageException("Failed to copy file " + file.getFilename(), e);
         }
     }
 
