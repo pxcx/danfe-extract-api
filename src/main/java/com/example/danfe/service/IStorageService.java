@@ -11,6 +11,7 @@ public interface IStorageService {
     String store(MultipartFile file);
     void copy(Resource file, String destinationDir);
     List<Path> loadAll();
+    List<Path> loadDir(String dir);
     Path load(String filename);
     Resource loadAsResource(String filename);
     void deleteAll();

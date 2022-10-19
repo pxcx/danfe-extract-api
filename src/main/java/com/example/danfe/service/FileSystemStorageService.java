@@ -78,7 +78,17 @@ public class FileSystemStorageService implements IStorageService{
         try {
             return Files.walk(this.rootLocation)
                     .filter(path -> !path.equals(this.rootLocation))
-                    .map(path -> this.rootLocation.relativize(path))
+                    .collect(Collectors.toList());
+        } catch (IOException e) {
+            throw new StorageException("Failed to read stored files", e);
+        }
+    }
+
+    @Override
+    public List<Path> loadDir(String dir) {
+        try {
+            return Files.walk(this.rootLocation.resolve(dir))
+                    .filter(path -> !path.equals(this.rootLocation))
                     .collect(Collectors.toList());
         } catch (IOException e) {
             throw new StorageException("Failed to read stored files", e);

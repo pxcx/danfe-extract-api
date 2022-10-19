@@ -1,12 +1,15 @@
 package com.example.danfe.type;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class DanfeExtractOutput {
     private String packageID;
-    private DanfeExtractItem[] extract;
+    private List<DanfeExtractItem> extract;
 
-    public DanfeExtractOutput(String packageID, DanfeExtractItem[] extract) {
+    public DanfeExtractOutput(String packageID) {
         this.packageID = packageID;
-        this.extract = extract;
+        this.extract = extract = new ArrayList<>();
     }
 
     public String getPackageID() {
@@ -17,11 +20,15 @@ public class DanfeExtractOutput {
         this.packageID = packageID;
     }
 
-    public DanfeExtractItem[] getExtract() {
+    public List<DanfeExtractItem> getExtract() {
         return extract;
     }
 
-    public void setExtract(DanfeExtractItem[] extract) {
+    public void setExtract(List<DanfeExtractItem> extract) {
         this.extract = extract;
+    }
+
+    public void addExtractedList(List<DanfeExtractItem> extract) {
+        extract.addAll(extract);
     }
 }

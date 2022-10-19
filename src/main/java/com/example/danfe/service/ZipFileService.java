@@ -15,7 +15,7 @@ import java.nio.file.Path;
 public class ZipFileService {
     private String zipFilename;
     private String packageID;
-    private FileSystemStorageService storageService;
+    private IStorageService storageService;
 
     @Autowired
     public ZipFileService(FileSystemStorageService storageService) {
