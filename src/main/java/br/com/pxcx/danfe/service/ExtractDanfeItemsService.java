@@ -1,14 +1,13 @@
-package com.example.danfe.service;
+package br.com.pxcx.danfe.service;
 
-import com.example.danfe.type.DanfeExtractItem;
-import com.example.danfe.type.DanfeExtractOutput;
+import br.com.pxcx.danfe.type.DanfeExtractItem;
+import br.com.pxcx.danfe.type.DanfeExtractOutput;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.nio.file.Path;
-import java.util.ArrayList;
 import java.util.List;
 
 @Service

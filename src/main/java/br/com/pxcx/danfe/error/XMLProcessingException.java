@@ -1,4 +1,4 @@
-package com.example.danfe.error;
+package br.com.pxcx.danfe.error;
 
 public class XMLProcessingException extends RuntimeException{
     public XMLProcessingException(String message) {

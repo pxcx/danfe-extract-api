@@ -1,4 +1,4 @@
-package com.example.danfe.error;
+package br.com.pxcx.danfe.error;
 
 public class InvalidUsageException extends RuntimeException{
 

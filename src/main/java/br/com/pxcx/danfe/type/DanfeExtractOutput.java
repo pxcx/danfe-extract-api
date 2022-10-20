@@ -1,4 +1,4 @@
-package com.example.danfe.type;
+package br.com.pxcx.danfe.type;
 
 import java.util.ArrayList;
 import java.util.List;

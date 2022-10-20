@@ -1,8 +1,8 @@
-package com.example.danfe.service;
+package br.com.pxcx.danfe.service;
 
-import com.example.danfe.error.InvalidUsageException;
-import com.example.danfe.error.XMLProcessingException;
-import com.example.danfe.type.DanfeExtractItem;
+import br.com.pxcx.danfe.error.InvalidUsageException;
+import br.com.pxcx.danfe.type.DanfeExtractItem;
+import br.com.pxcx.danfe.error.XMLProcessingException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;

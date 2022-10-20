@@ -1,8 +1,9 @@
-package com.example.danfe.rest;
+package br.com.pxcx.danfe.rest;
 
-import com.example.danfe.service.PackageUploadService;
-import com.example.danfe.type.DanfePackageUploadOutput;
+import br.com.pxcx.danfe.service.PackageUploadService;
+import br.com.pxcx.danfe.type.DanfePackageUploadOutput;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,6 +18,7 @@ public class UploadPackageRest {
         this.uploadService = uploadService;
     }
 
+    @CrossOrigin
     @PostMapping("/upload-package")
     public DanfePackageUploadOutput uploadDanfePackage(@RequestParam("danfePackage") MultipartFile danfePackage) {
         uploadService.setDanfePackage(danfePackage);
