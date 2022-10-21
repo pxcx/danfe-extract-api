@@ -5,5 +5,5 @@ services:
     container_name: danfe-extract-api
     restart: always
     ports:
-      - 50000:8080
+      - 5000:8080
 
