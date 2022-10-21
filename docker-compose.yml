@@ -1,0 +1,9 @@
+version: "2"
+services:
+  jenkins:
+    image: pxcx/danfe-extract-api:latest
+    container_name: danfe-extract-api
+    restart: always
+    ports:
+      - 50000:8080
+
