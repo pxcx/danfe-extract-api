@@ -1,8 +1,8 @@
-package br.com.pxcx.danfe.rest;
+package br.com.ifsolucoescontabeis.danfe.rest;
 
-import br.com.pxcx.danfe.service.FileSystemStorageService;
-import br.com.pxcx.danfe.type.StatusOutput;
-import br.com.pxcx.danfe.type.SuccesStatusOutput;
+import br.com.ifsolucoescontabeis.danfe.service.FileSystemStorageService;
+import br.com.ifsolucoescontabeis.danfe.type.StatusOutput;
+import br.com.ifsolucoescontabeis.danfe.type.SuccesStatusOutput;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;

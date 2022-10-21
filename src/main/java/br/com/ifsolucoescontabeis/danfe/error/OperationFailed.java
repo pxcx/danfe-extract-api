@@ -1,4 +1,4 @@
-package br.com.pxcx.danfe.error;
+package br.com.ifsolucoescontabeis.danfe.error;
 
 public class OperationFailed extends RuntimeException{
     public OperationFailed(String message) {

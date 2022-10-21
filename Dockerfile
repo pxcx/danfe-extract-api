@@ -1,3 +1,4 @@
-FROM openjdk:17-jdk-alpine
-COPY target/app.jar app.jar
+FROM openjdk:17-jdk-slim
+COPY target/danfe-extract-api-*.jar app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
+EXPOSE 80

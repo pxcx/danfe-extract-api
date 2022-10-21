@@ -1,4 +1,4 @@
-package br.com.pxcx.danfe.error;
+package br.com.ifsolucoescontabeis.danfe.error;
 
 public class StorageException extends RuntimeException{
     public StorageException(String message) {

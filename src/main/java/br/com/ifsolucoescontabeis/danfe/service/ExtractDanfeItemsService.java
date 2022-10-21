@@ -1,7 +1,7 @@
-package br.com.pxcx.danfe.service;
+package br.com.ifsolucoescontabeis.danfe.service;
 
-import br.com.pxcx.danfe.type.DanfeExtractItem;
-import br.com.pxcx.danfe.type.DanfeExtractOutput;
+import br.com.ifsolucoescontabeis.danfe.type.DanfeExtractItem;
+import br.com.ifsolucoescontabeis.danfe.type.DanfeExtractOutput;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

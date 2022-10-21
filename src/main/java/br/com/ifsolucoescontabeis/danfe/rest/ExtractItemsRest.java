@@ -1,7 +1,7 @@
-package br.com.pxcx.danfe.rest;
+package br.com.ifsolucoescontabeis.danfe.rest;
 
-import br.com.pxcx.danfe.service.ExtractDanfeItemsService;
-import br.com.pxcx.danfe.type.DanfeExtractOutput;
+import br.com.ifsolucoescontabeis.danfe.service.ExtractDanfeItemsService;
+import br.com.ifsolucoescontabeis.danfe.type.DanfeExtractOutput;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;

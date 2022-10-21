@@ -1,7 +1,7 @@
-package br.com.pxcx.danfe.rest;
+package br.com.ifsolucoescontabeis.danfe.rest;
 
-import br.com.pxcx.danfe.service.PackageUploadService;
-import br.com.pxcx.danfe.type.DanfePackageUploadOutput;
+import br.com.ifsolucoescontabeis.danfe.service.PackageUploadService;
+import br.com.ifsolucoescontabeis.danfe.type.DanfePackageUploadOutput;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;

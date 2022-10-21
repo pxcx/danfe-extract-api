@@ -1,4 +1,4 @@
-package br.com.pxcx.danfe.type;
+package br.com.ifsolucoescontabeis.danfe.type;
 
 public class DanfeExtractItem {
     private String description;

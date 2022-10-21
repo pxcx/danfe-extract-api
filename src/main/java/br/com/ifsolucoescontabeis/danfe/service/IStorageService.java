@@ -1,4 +1,4 @@
-package br.com.pxcx.danfe.service;
+package br.com.ifsolucoescontabeis.danfe.service;
 
 import org.springframework.core.io.Resource;
 import org.springframework.web.multipart.MultipartFile;

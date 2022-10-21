@@ -1,7 +1,7 @@
-package br.com.pxcx.danfe.service;
+package br.com.ifsolucoescontabeis.danfe.service;
 
-import br.com.pxcx.danfe.type.DanfePackageUploadOutput;
-import br.com.pxcx.danfe.error.InvalidUsageException;
+import br.com.ifsolucoescontabeis.danfe.type.DanfePackageUploadOutput;
+import br.com.ifsolucoescontabeis.danfe.error.InvalidUsageException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;

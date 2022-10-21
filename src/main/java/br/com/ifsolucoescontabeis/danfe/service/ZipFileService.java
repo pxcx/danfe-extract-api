@@ -1,7 +1,7 @@
-package br.com.pxcx.danfe.service;
+package br.com.ifsolucoescontabeis.danfe.service;
 
-import br.com.pxcx.danfe.error.InvalidUsageException;
-import br.com.pxcx.danfe.error.OperationFailed;
+import br.com.ifsolucoescontabeis.danfe.error.InvalidUsageException;
+import br.com.ifsolucoescontabeis.danfe.error.OperationFailed;
 import net.lingala.zip4j.ZipFile;
 import net.lingala.zip4j.exception.ZipException;
 import org.springframework.beans.factory.annotation.Autowired;

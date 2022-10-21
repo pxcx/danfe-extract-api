@@ -1,4 +1,4 @@
-package br.com.pxcx.danfe;
+package br.com.ifsolucoescontabeis.danfe;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

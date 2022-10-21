@@ -1,6 +1,6 @@
-package br.com.pxcx.danfe.service;
+package br.com.ifsolucoescontabeis.danfe.service;
 
-import br.com.pxcx.danfe.error.StorageException;
+import br.com.ifsolucoescontabeis.danfe.error.StorageException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;

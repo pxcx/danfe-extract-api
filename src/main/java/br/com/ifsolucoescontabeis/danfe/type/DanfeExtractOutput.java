@@ -1,4 +1,4 @@
-package br.com.pxcx.danfe.type;
+package br.com.ifsolucoescontabeis.danfe.type;
 
 import java.util.ArrayList;
 import java.util.List;
