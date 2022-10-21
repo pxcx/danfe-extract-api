@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class CleanPackagesRest {
     private final FileSystemStorageService storageService;
-
     @Autowired
     public CleanPackagesRest(FileSystemStorageService storageService) {
         this.storageService = storageService;
