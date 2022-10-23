@@ -73,6 +73,7 @@ public class ProcessXMLService {
         extractedItem.setNcm(getValueFromProductElement(productElement, "NCM"));
         extractedItem.setCest(getValueFromProductElement(productElement, "CEST"));
         extractedItem.setCfop(getValueFromProductElement(productElement, "CFOP"));
+        extractedItem.setEan(getValueFromProductElement(productElement, "cEAN"));
 
         extractedItem.setCst(getCst(taxElement));
         extractedItem.setOrigem(getOrigFromICMS(icmsDetailsElement));

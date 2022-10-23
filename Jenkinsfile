@@ -29,9 +29,9 @@ pipeline {
     stage('Container Build') {
       steps {
         sh '''
-            docker login -u ${DOCKERHUB_CREDS_USR} -p ${DOCKERHUB_CREDS_PSW}
             docker build . -t pxcx/danfe-extract-api
             docker push pxcx/danfe-extract-api
+            docker login -u ${DOCKERHUB_CREDS_USR} -p ${DOCKERHUB_CREDS_PSW}
         '''
       }
     }

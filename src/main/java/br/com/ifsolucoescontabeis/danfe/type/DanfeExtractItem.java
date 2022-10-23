@@ -2,6 +2,8 @@ package br.com.ifsolucoescontabeis.danfe.type;
 
 public class DanfeExtractItem {
     private String description;
+
+    private String ean;
     private String ncm;
     private String cst;
     private String cfop;
@@ -14,8 +16,9 @@ public class DanfeExtractItem {
     public DanfeExtractItem() {
     }
 
-    public DanfeExtractItem(String description, String ncm, String cst, String cfop, String aliqIcms, String aliqPis, String aliqCofins, String origem, String cest) {
+    public DanfeExtractItem(String description, String ean, String ncm, String cst, String cfop, String aliqIcms, String aliqPis, String aliqCofins, String origem, String cest) {
         this.description = description;
+        this.ean = ean;
         this.ncm = ncm;
         this.cst = cst;
         this.cfop = cfop;
@@ -24,6 +27,14 @@ public class DanfeExtractItem {
         this.aliqCofins = aliqCofins;
         this.origem = origem;
         this.cest = cest;
+    }
+
+    public String getEan() {
+        return ean;
+    }
+
+    public void setEan(String ean) {
+        this.ean = ean;
     }
 
     public String getAliqPis() {
